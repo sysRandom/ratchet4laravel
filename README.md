@@ -12,7 +12,7 @@ This package enables you to create and run a fully functioning WebSocket server 
 ## Installation
 
 ```bash
-$ composer require askedio/laravel-ratchet
+$ composer require sysrandom/ratchet4laravel
 ```
 
 The service provider is loaded automatically in Laravel 5.5 using Package Autodiscovery.
@@ -52,4 +52,3 @@ $ php artisan ratchet:serve --driver=WsServer -z
 This will connect to the socket you define in your `config/ratchet.php` settings and listen for messages from ZeroMQ.
 
 To handle messages published via ZeroMQ, simply add a `public function onEntry($messages)` method to your server class. This will allow you to receive messages inside your Ratchet server instance and determine how to route them.
-
